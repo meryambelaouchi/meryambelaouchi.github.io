@@ -1,0 +1,91 @@
+@import url("https://use.typekit.net/vys0aik.css");
+
+body {
+    margin: 0px;
+    background-color: #FAF6FF;
+    font-family: "roc-grotesk", sans-serif;
+    color: #672BA5;
+}
+
+.nav .title {
+    font-family: "decoy", serif;
+    font-weight: 600;
+    margin-right: 250px;
+}
+
+.nav {
+    margin: 25px;
+    text-align: center;
+}
+
+.nav a {
+    font-family: "roc-grotesk", sans-serif;
+    color: #672BA5;
+    font-size: 30px;
+    text-decoration: none;
+    margin: 40px;
+}
+
+h1 {
+    font-family: "roc-grotesk", sans-serif;
+    color: #672BA5;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 50px;
+}
+
+input {
+    background-color: #FAF6FF;
+    border-color: #672BA5;
+    padding: 7px;
+    width: 500px;
+}
+
+input[type=text] {
+    font-family: "roc-grotesk", sans-serif;
+    color: #672BA5;
+}
+
+.content {
+    display: flex;
+    /* aligns horizontally */
+    justify-content: center;
+    /*aligns vertivally*/
+    align-items: center;
+}
+
+p {
+    font-size: 25px;
+}
+
+.searching {
+    padding: 20px;
+    background-color: #b191d2;
+    color: white;
+    height: 550px;
+}
+
+.searching input {
+    background-color: #b191d2;
+    border-color: white;
+
+}
+
+.making {
+    border: solid;
+    border-color: #b191d2;
+    padding: 17px;
+    height: 550px;
+}
+
+button {
+    font-family: "roc-grotesk", sans-serif;
+    color: #672BA5;
+    font-size: 20px;
+    border-color: #672BA5;
+    background-color: #FAF6FF;
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 350px;
+}

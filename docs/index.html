@@ -1,0 +1,103 @@
+<!-- https://www.w3schools.com/howto/howto_js_slideshow.asp used for the carousel -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keeping up with the tans</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!--   <script src="../../../scripts.js" type="module" defer></script> -->
+</head>
+
+<body>
+    <div class="nav">
+        <a href="index.html" class="title">Keeping up with the tans</a>
+        <a href="index.html">Home</a>
+        <a href="allReleases.html">All releases</a>
+        <a href="playlist.html">Make Playlist</a>
+
+    </div>
+    <h1>Recent releases</h1>
+    <div class="slideshow-container">
+
+        <div class="mySlides">
+            <div class="text">
+                <div class="album">Face</div>
+                <div class="artist">By Jimin</div>
+                <div class="check"> <a href="face.html" class="checking">Check it out > </a></div>
+            </div>
+            <a href="face.html"><img src="./images/Bora_Face.png"></a>
+
+        </div>
+
+        <div class="mySlides">
+            <div class="text">
+                <div class="album">Layover</div>
+                <div class="artist">By V</div>
+                <div class="check"><a href="layover.html" class="checking">Check it out ></a></div>
+            </div>
+            <a href="layover.html"><img src="./images/Bora_layover.png"></a>
+
+        </div>
+
+        <div class="mySlides">
+            <div class="text">
+                <div class="album">Golden</div>
+                <div class="artist">By Jungkook</div>
+                <div class="check"><a href="golden.html" class="checking">Check it out ></a></div>
+            </div>
+            <a href="golden.html"><img src="./images/Bora_Golden.png"></a>
+
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+@import url("https://use.typekit.net/vys0aik.css");
+
+body {
+    margin: 0px;
+    background-color: #FAF6FF;
+    font-family: "roc-grotesk", sans-serif;
+    color: #672BA5;
+}
+
+.nav .title {
+    font-family: "decoy", serif;
+    font-weight: 600;
+    margin-right: 250px;
+}
+
+.nav {
+    margin: 25px;
+    text-align: center;
+}
+
+.nav a {
+    font-family: "roc-grotesk", sans-serif;
+    color: #672BA5;
+    font-size: 30px;
+    text-decoration: none;
+    margin: 40px;
+}
+
+.contentTop,
+.contentBottom {
+    display: flex;
+    /* aligns horizontally */
+    justify-content: center;
+    /*aligns vertivally*/
+    align-items: center;
+    column-gap: 100px;
+    margin-bottom: 150px;
+}
+
+.contentBottom {
+    text-align: center;
+    column-gap: 100px;
+}
+
+.albumCover {
+    margin-top: 50px;
+}
+
+img {
+    opacity: 50%;
+    width: 400px;
+}
+
+.albumName {
+    font-size: 40px;
+    font-weight: 550;
+    background-color: white;
+    margin-top: -20px;
+    margin-left: -40px;
+    position: absolute;
+    z-index: 1;
+}
+
+.artist {
+    font-size: 40px;
+    background-color: white;
+    margin-top: -25px;
+    margin-left: 300px;
+    position: absolute;
+    z-index: 1;
+}
+
+.para {
+    font-size: 20px;
+    width: 500px;
+
+}
+
+.para p {
+    line-height: 35px;
+}
+
+.trackTitle {
+    background-color: white;
+    font-size: 40px;
+    font-weight: 600;
+    position: absolute;
+    z-index: 1;
+    margin-left: 120px;
+    margin-top: -25px;
+}
+
+.tracklist {
+    font-size: 25px;
+    text-align: center;
+}
+
+.artistPic {
+    text-align: center;
+    margin-left: 100px;
+}
+
+button {
+    font-family: "roc-grotesk", sans-serif;
+    color: #672BA5;
+    font-size: 20px;
+    border-color: #672BA5;
+    background-color: #FAF6FF;
+    padding: 5px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    line-height: 45px;
+}

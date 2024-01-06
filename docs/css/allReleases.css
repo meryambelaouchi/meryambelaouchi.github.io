@@ -1,0 +1,101 @@
+@import url("https://use.typekit.net/vys0aik.css");
+
+body {
+    margin: 0px;
+    background-color: #FAF6FF;
+    font-family: "roc-grotesk", sans-serif;
+    color: #672BA5;
+}
+
+.nav .title {
+    font-family: "decoy", serif;
+    font-weight: 600;
+    margin-right: 250px;
+}
+
+.nav {
+    margin: 25px;
+    text-align: center;
+}
+
+.nav a {
+    font-family: "roc-grotesk", sans-serif;
+    color: #672BA5;
+    font-size: 30px;
+    text-decoration: none;
+    margin: 40px;
+}
+
+h1 {
+    font-family: "roc-grotesk", sans-serif;
+    color: #672BA5;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+img {
+    opacity: 50%;
+}
+
+.albumName {
+    font-size: 40px;
+    font-weight: 550;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    margin-top: -25px;
+}
+
+.artist {
+    font-size: 40px;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    margin-top: 15px;
+}
+
+#cards {
+    display: flex;
+    justify-content: center;
+    column-gap: 100px;
+    row-gap: 100px;
+    margin: 0 200px;
+    flex-wrap: wrap;
+}
+
+.card {
+    align-self: center;
+}
+
+.albumName {
+    text-align: center;
+}
+
+.artist {
+    text-align: center;
+}
+
+.radio {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.radio label {
+    margin-right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.radio input {
+    cursor: pointer;
+}
+
+/* not working :( */
+.radio input:checked {
+    background-color: #672BA5;
+    border-color: #672BA5;
+}
